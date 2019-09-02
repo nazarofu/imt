@@ -15,7 +15,6 @@ namespace Индекс_массы_тела__ИМТ_
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
