@@ -31,6 +31,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +83,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\children.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_more_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_very_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_more_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_very_fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

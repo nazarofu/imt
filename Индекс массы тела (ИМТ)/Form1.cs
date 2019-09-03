@@ -41,26 +41,36 @@ namespace Индекс_массы_тела__ИМТ_
         {
             if (imt < 20)
             {
+                label4.ForeColor = Color.DarkGoldenrod;
+                pictureBox1.Image = Properties.Resources.male_light; 
                 return "Дефицит массы тела";
             }
 
             else if (imt >= 20 && imt <= 25)
             {
+                label4.ForeColor = Color.Green;
+                pictureBox1.Image = Properties.Resources.male_normal;
                 return "Нормальный вес";
             }
 
             else if (imt > 26 && imt <= 30)
             {
+                label4.ForeColor = Color.DarkGoldenrod;
+                pictureBox1.Image = Properties.Resources.male_fat;
                 return "Избыточный вес";
             }
 
             else if (imt >= 31 && imt <= 40)
             {
+                label4.ForeColor = Color.Red;
+                pictureBox1.Image = Properties.Resources.male_more_fat;
                 return "Ожирение";
             }
 
             else
             {
+                label4.ForeColor = Color.Red;
+                pictureBox1.Image = Properties.Resources.male_very_fat;
                 return "Сильное ожирение";
             }
         }
@@ -69,26 +79,36 @@ namespace Индекс_массы_тела__ИМТ_
         {
             if (imt < 19)
             {
+                label4.ForeColor = Color.DarkGoldenrod;
+                pictureBox1.Image = Properties.Resources.female_light;
                 return "Дефицит массы тела";
             }
 
             else if (imt >= 19 && imt <= 24)
             {
+                label4.ForeColor = Color.Green;
+                pictureBox1.Image = Properties.Resources.female_normal;
                 return "Нормальный вес";
             }
 
             else if (imt > 25 && imt <= 30)
             {
+                label4.ForeColor = Color.DarkGoldenrod;
+                pictureBox1.Image = Properties.Resources.female_fat;
                 return "Избыточный вес";
             }
 
             else if (imt >= 31 && imt <= 40)
             {
+                label4.ForeColor = Color.Red;
+                pictureBox1.Image = Properties.Resources.female_more_fat;
                 return "Ожирение";
             }
 
             else
             {
+                label4.ForeColor = Color.Red;
+                pictureBox1.Image = Properties.Resources.female_very_fat;
                 return "Сильное ожирение";
             }
         }
@@ -99,7 +119,8 @@ namespace Индекс_массы_тела__ИМТ_
 
             if (age < 18)
             {
-                return "Ваш возраст не поддаётся рассчётам";
+                pictureBox1.Image = Properties.Resources.children;
+                return "ИМТ детей не поддаётся точным рассчётам";
             }
             // От 18 до 24 лет
             else if (age >= 18 && age <= 24)
@@ -107,12 +128,12 @@ namespace Индекс_массы_тела__ИМТ_
 
                 if (imt >= 18 && imt <= 24)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
 
@@ -122,12 +143,12 @@ namespace Индекс_массы_тела__ИМТ_
             {
                 if (imt >= 20 && imt <= 25)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
 
@@ -137,12 +158,12 @@ namespace Индекс_массы_тела__ИМТ_
             {
                 if (imt >= 21 && imt <= 26)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
 
@@ -152,12 +173,12 @@ namespace Индекс_массы_тела__ИМТ_
             {
                 if (imt >= 22 && imt <= 27)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
 
@@ -168,12 +189,12 @@ namespace Индекс_массы_тела__ИМТ_
             {
                 if (imt >= 23 && imt <= 28)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
 
@@ -183,12 +204,12 @@ namespace Индекс_массы_тела__ИМТ_
             {
                 if (imt >= 24 && imt <= 29)
                 {
-                    return "Ваш ИМТ оптимален для вашего возраста";
+                    return "ИМТ оптимален для вашего возраста";
                 }
 
                 else
                 {
-                    return "Ваш ИМТ не оптимален для вашего возраста";
+                    return "ИМТ не оптимален для вашего возраста";
                 }
             }
         }
