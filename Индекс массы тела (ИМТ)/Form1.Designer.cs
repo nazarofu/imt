@@ -337,6 +337,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(588, 498);
+            this.MinimumSize = new System.Drawing.Size(588, 498);
             this.Name = "Form1";
             this.Text = "Индекс массы тела";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

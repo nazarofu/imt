@@ -36,7 +36,7 @@ namespace Индекс_массы_тела__ИМТ_
         {
             return radioButton1.Checked ? checkMale(imt) : checkFemale(imt);
         }
-
+        
         private String checkMale(double imt)
         {
             if (imt < 20)
